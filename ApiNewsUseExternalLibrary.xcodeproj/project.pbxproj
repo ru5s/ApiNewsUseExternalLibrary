@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B052CEE30EA1CCF3BA160623 /* Pods_ApiNewsUseExternalLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 920B5B9AD35FA0C5EDABC4E8 /* Pods_ApiNewsUseExternalLibrary.framework */; };
 		B5B54387292B49BF00E82C9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B54386292B49BF00E82C9E /* AppDelegate.swift */; };
 		B5B54389292B49BF00E82C9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B54388292B49BF00E82C9E /* SceneDelegate.swift */; };
 		B5B5438B292B49BF00E82C9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B5438A292B49BF00E82C9E /* ViewController.swift */; };
 		B5B5438E292B49BF00E82C9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B5438C292B49BF00E82C9E /* Main.storyboard */; };
 		B5B54390292B49C100E82C9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B5438F292B49C100E82C9E /* Assets.xcassets */; };
 		B5B54393292B49C100E82C9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B54391292B49C100E82C9E /* LaunchScreen.storyboard */; };
+		B5B5439B292B4D2400E82C9E /* RequestsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B5439A292B4D2400E82C9E /* RequestsService.swift */; };
+		B5B5439D292B7A6400E82C9E /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B5439C292B7A6400E82C9E /* Articles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4381A2D292FBB4C2C1E23A2E /* Pods-ApiNewsUseExternalLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiNewsUseExternalLibrary.release.xcconfig"; path = "Target Support Files/Pods-ApiNewsUseExternalLibrary/Pods-ApiNewsUseExternalLibrary.release.xcconfig"; sourceTree = "<group>"; };
+		920B5B9AD35FA0C5EDABC4E8 /* Pods_ApiNewsUseExternalLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiNewsUseExternalLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B54383292B49BF00E82C9E /* ApiNewsUseExternalLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiNewsUseExternalLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B54386292B49BF00E82C9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5B54388292B49BF00E82C9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		B5B5438F292B49C100E82C9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5B54392292B49C100E82C9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5B54394292B49C100E82C9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5B5439A292B4D2400E82C9E /* RequestsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsService.swift; sourceTree = "<group>"; };
+		B5B5439C292B7A6400E82C9E /* Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
+		F65F537A0ED6990B75AE8969 /* Pods-ApiNewsUseExternalLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiNewsUseExternalLibrary.debug.xcconfig"; path = "Target Support Files/Pods-ApiNewsUseExternalLibrary/Pods-ApiNewsUseExternalLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B052CEE30EA1CCF3BA160623 /* Pods_ApiNewsUseExternalLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6BB320148E971002EED3CE56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F65F537A0ED6990B75AE8969 /* Pods-ApiNewsUseExternalLibrary.debug.xcconfig */,
+				4381A2D292FBB4C2C1E23A2E /* Pods-ApiNewsUseExternalLibrary.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		787BBC7A34C7E4C1BE5F0429 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				920B5B9AD35FA0C5EDABC4E8 /* Pods_ApiNewsUseExternalLibrary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B5B5437A292B49BF00E82C9E = {
 			isa = PBXGroup;
 			children = (
 				B5B54385292B49BF00E82C9E /* ApiNewsUseExternalLibrary */,
 				B5B54384292B49BF00E82C9E /* Products */,
+				6BB320148E971002EED3CE56 /* Pods */,
+				787BBC7A34C7E4C1BE5F0429 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +91,8 @@
 				B5B5438F292B49C100E82C9E /* Assets.xcassets */,
 				B5B54391292B49C100E82C9E /* LaunchScreen.storyboard */,
 				B5B54394292B49C100E82C9E /* Info.plist */,
+				B5B5439A292B4D2400E82C9E /* RequestsService.swift */,
+				B5B5439C292B7A6400E82C9E /* Articles.swift */,
 			);
 			path = ApiNewsUseExternalLibrary;
 			sourceTree = "<group>";
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5B54397292B49C100E82C9E /* Build configuration list for PBXNativeTarget "ApiNewsUseExternalLibrary" */;
 			buildPhases = (
+				C3F1A376C99EE2592B00AC6C /* [CP] Check Pods Manifest.lock */,
 				B5B5437F292B49BF00E82C9E /* Sources */,
 				B5B54380292B49BF00E82C9E /* Frameworks */,
 				B5B54381292B49BF00E82C9E /* Resources */,
+				849F3312BDF54C35CAD8C370 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +165,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		849F3312BDF54C35CAD8C370 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ApiNewsUseExternalLibrary/Pods-ApiNewsUseExternalLibrary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ApiNewsUseExternalLibrary/Pods-ApiNewsUseExternalLibrary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ApiNewsUseExternalLibrary/Pods-ApiNewsUseExternalLibrary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3F1A376C99EE2592B00AC6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ApiNewsUseExternalLibrary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B5B5437F292B49BF00E82C9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B5B5438B292B49BF00E82C9E /* ViewController.swift in Sources */,
+				B5B5439D292B7A6400E82C9E /* Articles.swift in Sources */,
+				B5B5439B292B4D2400E82C9E /* RequestsService.swift in Sources */,
 				B5B54387292B49BF00E82C9E /* AppDelegate.swift in Sources */,
 				B5B54389292B49BF00E82C9E /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +358,7 @@
 		};
 		B5B54398292B49C100E82C9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F65F537A0ED6990B75AE8969 /* Pods-ApiNewsUseExternalLibrary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,8 +370,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,14 +380,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = uz.IsmailovRuslan.ApiNewsUseExternalLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B5B54399292B49C100E82C9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4381A2D292FBB4C2C1E23A2E /* Pods-ApiNewsUseExternalLibrary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,8 +403,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +413,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = uz.IsmailovRuslan.ApiNewsUseExternalLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

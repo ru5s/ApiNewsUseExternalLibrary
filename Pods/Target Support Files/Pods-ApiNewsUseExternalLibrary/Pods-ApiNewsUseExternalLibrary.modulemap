@@ -1,0 +1,6 @@
+framework module Pods_ApiNewsUseExternalLibrary {
+  umbrella header "Pods-ApiNewsUseExternalLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}
