@@ -13,8 +13,8 @@ class HeaderArticles: Mappable {
     
     var allNews: [Articles] = []
     
-    required convenience init?(map: ObjectMapper.Map) {
-        self.init(map: map)
+    required init?(map: ObjectMapper.Map) {
+        
     }
     
     func mapping(map: Map) {
@@ -29,8 +29,8 @@ class Articles: Mappable {
     var urlToImage: String = ""
     
     
-    required convenience init?(map: ObjectMapper.Map) {
-        self.init(map: map)
+    required init?(map: ObjectMapper.Map) {
+        
     }
     
     func mapping(map: ObjectMapper.Map) {

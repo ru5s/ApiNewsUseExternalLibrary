@@ -16,12 +16,19 @@ class ViewController: UIViewController {
     var articlesArray = [Articles]()
     
     let requester = MoyaProvider<NewsEnum.bitcoin>()
+    
+    let thread1 = DispatchQueue(label: "com.apple.thread1")
+    let group = DispatchGroup()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        
         requestApi()
+        
+        
+        
     }
 
     func requestApi(){
@@ -30,29 +37,22 @@ class ViewController: UIViewController {
             
             switch result {
             case .success(let response):
+                
+                
                 let result = try? JSONSerialization.jsonObject(with: response.data, options: [])
                  
-                 guard let jsonData = result as? [String:Any] else { return }
-                 
-                 if let arrayNews = jsonData["articles"] as? NSArray {
-                     print(arrayNews.count)
-                 
-                 
-                 
-                     for news in arrayNews {
-                        guard let currentNews = news as? [String:Any] else { return }
-                 
-                         if let title = currentNews["title"] as? String {
-                             print(title)
-                 
-                         }
-                     }
-                 }
-                 
+                guard let jsonData = result as? [String:Any] else { return }
+                
+                let news = HeaderArticles(JSON: jsonData)
+                for item in news!.allNews{
+                    self.articlesArray.append(item)
+                    print(item.author)
+                }
             case .failure(let error):
                 print("error \(error)")
             }
         }
+        
     }
 
 }
