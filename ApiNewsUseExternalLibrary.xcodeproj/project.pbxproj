@@ -16,6 +16,8 @@
 		B5B54393292B49C100E82C9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B54391292B49C100E82C9E /* LaunchScreen.storyboard */; };
 		B5B5439B292B4D2400E82C9E /* RequestsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B5439A292B4D2400E82C9E /* RequestsService.swift */; };
 		B5B5439D292B7A6400E82C9E /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B5439C292B7A6400E82C9E /* Articles.swift */; };
+		B5F79C7A292E3AA300E75A5B /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79C79292E3AA300E75A5B /* ActivityIndicator.swift */; };
+		B5F79C7C292EA2F300E75A5B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F79C7B292EA2F300E75A5B /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		B5B54394292B49C100E82C9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5B5439A292B4D2400E82C9E /* RequestsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsService.swift; sourceTree = "<group>"; };
 		B5B5439C292B7A6400E82C9E /* Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
+		B5F79C79292E3AA300E75A5B /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		B5F79C7B292EA2F300E75A5B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		F65F537A0ED6990B75AE8969 /* Pods-ApiNewsUseExternalLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiNewsUseExternalLibrary.debug.xcconfig"; path = "Target Support Files/Pods-ApiNewsUseExternalLibrary/Pods-ApiNewsUseExternalLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +97,8 @@
 				B5B54394292B49C100E82C9E /* Info.plist */,
 				B5B5439A292B4D2400E82C9E /* RequestsService.swift */,
 				B5B5439C292B7A6400E82C9E /* Articles.swift */,
+				B5F79C79292E3AA300E75A5B /* ActivityIndicator.swift */,
+				B5F79C7B292EA2F300E75A5B /* TableViewCell.swift */,
 			);
 			path = ApiNewsUseExternalLibrary;
 			sourceTree = "<group>";
@@ -216,6 +222,8 @@
 				B5B5439D292B7A6400E82C9E /* Articles.swift in Sources */,
 				B5B5439B292B4D2400E82C9E /* RequestsService.swift in Sources */,
 				B5B54387292B49BF00E82C9E /* AppDelegate.swift in Sources */,
+				B5F79C7A292E3AA300E75A5B /* ActivityIndicator.swift in Sources */,
+				B5F79C7C292EA2F300E75A5B /* TableViewCell.swift in Sources */,
 				B5B54389292B49BF00E82C9E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
