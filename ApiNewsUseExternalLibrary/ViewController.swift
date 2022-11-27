@@ -79,11 +79,30 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
                 self.stopAndRemoveSpinnerView()
                 
                 let url = URL(string: self.articlesArray[indexPath.row].urlToImage)
+                
+                if (url?.relativeString.count)! > 0 {
+                    cell.image.kf.setImage(with: url)
+                } else {
+                    cell.image.image = UIImage(named: "Default")
+                }
+                
                 cell.image.kf.setImage(with: url)
             
-                cell.author.text = self.articlesArray[indexPath.row].author
+                let haveAuthor = self.articlesArray[indexPath.row].author
+                if haveAuthor.count > 0 {
+                    cell.author.text = self.articlesArray[indexPath.row].author
+                } else {
+                    cell.author.text = "No name author"
+                }
+                
+                let haveTitle = self.articlesArray[indexPath.row].title
+                if haveTitle.count > 0 {
+                    cell.title.text = self.articlesArray[indexPath.row].title
+                } else {
+                    cell.title.text = "No title by this news"
+                }
             
-                cell.title.text = self.articlesArray[indexPath.row].title
+                
             }
         }
         return cell
@@ -111,9 +130,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
                 let news = HeaderArticles(JSON: jsonData)
                 for item in news!.allNews{
                         self.articlesArray.append(item)
-                        print(item.author)
                     }
-                    
                 self.tableView.reloadData()
             case .failure(let error):
                 print("error \(error)")

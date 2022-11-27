@@ -22,7 +22,7 @@ class TableViewCell: UITableViewCell {
     let author: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .brown
+        label.textColor = .darkGray
         
         return label
     }()
