@@ -13,6 +13,8 @@ import Kingfisher
 
 class ViewController: UIViewController {
     
+    let child = SpinnerViewController()
+    
     @IBOutlet weak var btn: UIButton!
     var articlesArray: [Articles] = []
     
@@ -38,7 +40,6 @@ class ViewController: UIViewController {
         view.addSubview(tableView)
         
         createSpinnerView()
-        
         tableView.reloadData()
     }
     
@@ -74,6 +75,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         if articlesArray.count > 0 {
             DispatchQueue.main.async{
+                
+                self.stopAndRemoveSpinnerView()
+                
                 let url = URL(string: self.articlesArray[indexPath.row].urlToImage)
                 cell.image.kf.setImage(with: url)
             
@@ -82,8 +86,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
                 cell.title.text = self.articlesArray[indexPath.row].title
             }
         }
-        
-        
         return cell
     }
     
@@ -98,12 +100,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return header
     }
     
-    
-    
-    
     func requestApi(){
         requester.request(.bitcoinUrl){ (result) in
-            
             switch result {
             case .success(let response):
                 let result = try? JSONSerialization.jsonObject(with: response.data, options: [])
@@ -111,12 +109,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
                 guard let jsonData = result as? [String:Any] else { return }
                 
                 let news = HeaderArticles(JSON: jsonData)
-                
                 for item in news!.allNews{
-                    self.articlesArray.append(item)
-                    print(item.author)
+                        self.articlesArray.append(item)
+                        print(item.author)
+                    }
                     
-                }
                 self.tableView.reloadData()
             case .failure(let error):
                 print("error \(error)")
@@ -126,18 +123,17 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func createSpinnerView() {
-        let child = SpinnerViewController()
-        
         addChild(child)
         child.view.frame = view.frame
         view.addSubview(child.view)
         child.didMove(toParent: self)
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            
-        child.willMove(toParent: nil)
-        child.view.removeFromSuperview()
-        child.removeFromParent()
+    }
+    
+    func stopAndRemoveSpinnerView(){
+        DispatchQueue.main.async {
+            self.child.willMove(toParent: nil)
+            self.child.view.removeFromSuperview()
+            self.child.removeFromParent()
         }
     }
 }
