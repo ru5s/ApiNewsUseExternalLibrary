@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B052CEE30EA1CCF3BA160623 /* Pods_ApiNewsUseExternalLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 920B5B9AD35FA0C5EDABC4E8 /* Pods_ApiNewsUseExternalLibrary.framework */; };
+		B51F1FF129387EC800DB92B2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F1FF029387EC800DB92B2 /* SecondViewController.swift */; };
 		B5B54387292B49BF00E82C9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B54386292B49BF00E82C9E /* AppDelegate.swift */; };
 		B5B54389292B49BF00E82C9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B54388292B49BF00E82C9E /* SceneDelegate.swift */; };
 		B5B5438B292B49BF00E82C9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B5438A292B49BF00E82C9E /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		4381A2D292FBB4C2C1E23A2E /* Pods-ApiNewsUseExternalLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiNewsUseExternalLibrary.release.xcconfig"; path = "Target Support Files/Pods-ApiNewsUseExternalLibrary/Pods-ApiNewsUseExternalLibrary.release.xcconfig"; sourceTree = "<group>"; };
 		920B5B9AD35FA0C5EDABC4E8 /* Pods_ApiNewsUseExternalLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiNewsUseExternalLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51F1FF029387EC800DB92B2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		B5B54383292B49BF00E82C9E /* ApiNewsUseExternalLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiNewsUseExternalLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B54386292B49BF00E82C9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5B54388292B49BF00E82C9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				B5B5439C292B7A6400E82C9E /* Articles.swift */,
 				B5F79C79292E3AA300E75A5B /* ActivityIndicator.swift */,
 				B5F79C7B292EA2F300E75A5B /* TableViewCell.swift */,
+				B51F1FF029387EC800DB92B2 /* SecondViewController.swift */,
 			);
 			path = ApiNewsUseExternalLibrary;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51F1FF129387EC800DB92B2 /* SecondViewController.swift in Sources */,
 				B5B5438B292B49BF00E82C9E /* ViewController.swift in Sources */,
 				B5B5439D292B7A6400E82C9E /* Articles.swift in Sources */,
 				B5B5439B292B4D2400E82C9E /* RequestsService.swift in Sources */,
